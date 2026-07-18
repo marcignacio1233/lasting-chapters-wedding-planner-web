@@ -3,7 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Amara & Oak — Wedding Planning</title>
+<title>Lasting Chapters Co. — Wedding Planning</title>
+<link rel="icon" type="image/png" href="assets/favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -51,8 +52,10 @@
     backdrop-filter:blur(8px);
     border-bottom:1px solid var(--line);
   }
-  .logo{font-family:var(--serif); font-weight:600; font-size:1.25rem; letter-spacing:.02em;}
+  .logo{font-family:var(--serif); font-weight:600; font-size:1.25rem; letter-spacing:.02em; display:flex; align-items:center; gap:.55rem;}
   .logo em{font-style:italic; color:var(--plum); font-weight:400;}
+  .logo img{height:34px; width:auto; display:block;}
+  .logo-full{max-width:280px; width:60%; height:auto; display:block; margin:0 auto;}
   nav ul{list-style:none; display:flex; gap:2rem;}
   nav a{font-size:.85rem; letter-spacing:.03em; position:relative; padding-bottom:2px;}
   nav a::after{content:''; position:absolute; left:0; bottom:0; width:0; height:1px; background:var(--gold); transition:width .3s ease;}
@@ -235,7 +238,7 @@
 <body>
 
 <header>
-  <div class="logo">Amara <em>&</em> Oak</div>
+  <div class="logo"><img src="assets/logo-mark.png" alt="Lasting Chapters Co. monogram"> Lasting Chapters <em>Co.</em></div>
   <button class="nav-toggle" id="navToggle" aria-label="Open menu">☰</button>
   <nav><ul id="navList">
     <li><a href="#packages">Packages</a></li>
@@ -250,14 +253,15 @@
   <svg class="sprig left" viewBox="0 0 100 140" fill="none" stroke="#6B7A5E" stroke-width="2"><path d="M50 10 C 40 40, 40 60, 50 130"/><path d="M50 30 C 35 25, 25 30, 20 20"/><path d="M50 55 C 65 50, 75 55, 82 45"/><path d="M50 80 C 33 76, 24 82, 16 74"/><path d="M50 105 C 66 100, 77 106, 85 97"/></svg>
   <svg class="sprig right" viewBox="0 0 100 140" fill="none" stroke="#6E3B4C" stroke-width="2"><path d="M50 10 C 40 40, 40 60, 50 130"/><path d="M50 30 C 35 25, 25 30, 20 20"/><path d="M50 55 C 65 50, 75 55, 82 45"/><path d="M50 80 C 33 76, 24 82, 16 74"/></svg>
 
+  <img src="assets/logo-full.png" alt="Lasting Chapters Co." class="logo-full" style="margin-bottom:2rem;">
   <p class="eyebrow">Boutique wedding planning</p>
   <h1>Quiet, considered weddings, <span class="accent">planned by hand.</span></h1>
-  <p class="sub">Amara & Oak is a small studio taking on a limited number of weddings each season — full-service planning, day-of coordination, and everything in between.</p>
+  <p class="sub">Lasting Chapters Co. takes on a limited number of weddings each season — full-service planning, day-of coordination, and everything in between.</p>
   <div class="cta-row">
     <a href="#packages" class="btn btn-solid">View packages</a>
     <a href="#contact" class="btn btn-outline">Check our date</a>
   </div>
-  <p class="seal">Est. for the ones who notice detail</p>
+  <p class="seal">Every season, a lasting chapter</p>
 </section>
 
 <section class="philosophy" data-reveal>
@@ -409,8 +413,8 @@
 </section>
 
 <footer>
-  <div class="logo">Amara <em>&</em> Oak</div>
-  <p>Manila &amp; nearby provinces · hello@amaraandoak.example · © 2026</p>
+  <div class="logo"><img src="assets/logo-mark.png" alt="Lasting Chapters Co. monogram"> Lasting Chapters <em>Co.</em></div>
+  <p>Manila &amp; nearby provinces · hello@lastingchapters.example · © 2026</p>
 </footer>
 
 <script>
